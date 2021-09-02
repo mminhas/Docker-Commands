@@ -1,0 +1,14 @@
+Install Redis
+docker pull redis
+
+To Run
+docker run --name local-redis -d -p 6379:6379 redis
+
+To Run Command line Interface(Container ID: 8dd2149d3098)
+docker exec -it 8dd2149d3098 redis-cli
+
+Install Redis Commander
+npm i -g redis-commander
+
+To Run
+redis-commander
