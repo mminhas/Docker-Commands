@@ -1,0 +1,11 @@
+Install
+docker pull mysql
+
+To Run
+docker run --name local-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -p 3306:3306 -d mysql
+
+To connect with container
+docker exec -it local-mysql bash
+
+With DB server
+mysql information_schema -u root -pmy-secret-pw
