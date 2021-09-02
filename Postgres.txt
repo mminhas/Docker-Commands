@@ -1,0 +1,8 @@
+Install
+docker pull postgres
+
+To run
+docker run --name local-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
+
+Connect to CLI (Container ID: 78ddb5580f6f)
+docker exec -it 78ddb5580f6f psql -U postgres
