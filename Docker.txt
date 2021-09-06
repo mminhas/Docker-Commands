@@ -1,0 +1,2 @@
+Copy file to docker container
+docker cp "C:\Users\Dell\Dev_RDS-2021_09_03_11_14_06-dump.sql" local-mysql:/
